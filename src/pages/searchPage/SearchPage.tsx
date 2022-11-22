@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { Button, Grid } from '@mui/material'
+import { Grid, TextField, Typography } from '@mui/material'
 import './_SearchPage.scss'
 
 function SearchPage (): ReactElement {
@@ -17,15 +17,18 @@ function SearchPage (): ReactElement {
                     </p>
                 </Grid>
                 <Grid item xs={3}>
-                    <div>
+                    <Typography variant="h4" className="gridText" align="center" sx={{ fontWeight: 600 }}>
                         WELCOME TO ENERGY
-                    </div>
-                    <div>
+                    <Typography variant="subtitle1" width={'80%'}>
                         Compare your energy production today with comprehensive statistics
-                    </div>
+                    </Typography>
+                    </Typography>
                 </Grid>
                 <Grid item xs={6}>
-                    <Button variant="outlined">Outlined</Button>
+                    <TextField
+                        label="Search location"
+                        variant="filled"
+                    />
                 </Grid>
             </Grid>
         </div>
