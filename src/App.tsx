@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react'
-import './App.css'
+import './App.scss'
+import { Button } from '@mui/material'
 
 function App (): ReactElement {
   return (
@@ -7,6 +8,9 @@ function App (): ReactElement {
         <p>
           ME frontend
         </p>
+        <Button variant="text">Text</Button>
+        <Button variant="contained">Contained</Button>
+        <Button variant="outlined">Outlined</Button>
     </div>
   )
 }
