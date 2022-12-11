@@ -1,11 +1,16 @@
 @import "src/resources/colours.module";
+@import "src/resources/screen_sizes.module";
 
 .SearchPage {
-  padding: 40px 10px
+  //padding: 40px 10px
 };
 
 .content {
   position: relative;
+
+  @media only screen and (max-width: $medium) {
+    align-items: center;
+  }
 }
 
 .backgroundImage {
@@ -28,6 +33,9 @@
 .imageIcon {
   height: 10vh;
   width: 20vh;
+  @media only screen and (min-width: $medium) {
+    padding-left: 50px;
+  }
 }
 
 .postcodeSearch {

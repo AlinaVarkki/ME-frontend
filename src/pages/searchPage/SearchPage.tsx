@@ -12,9 +12,9 @@ function SearchPage (): ReactElement {
                 container
                 direction="column"
                 className="content"
-                alignItems="center"
                 height="100vh"
                 spacing={2}
+                sx={{ padding: 2, paddingTop: 4 }}
             >
                 <Grid item xs={3}>
                     <img className="imageIcon" src="https://www.energymutual.com/wp-content/uploads/2020/03/EM-1-cropped.svg" alt={'Energy Mutual Logo'}/>
