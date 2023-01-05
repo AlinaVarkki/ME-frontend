@@ -4,10 +4,6 @@ import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
 import IconButton from '@mui/material/IconButton'
-import DashboardIcon from '@mui/icons-material/Dashboard'
-import PersonIcon from '@mui/icons-material/Person'
-import LocationOnIcon from '@mui/icons-material/LocationOn'
-import PieChartIcon from '@mui/icons-material/PieChart'
 import ImageIcon from '@mui/icons-material/Image'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
@@ -18,6 +14,11 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import { ReactElement } from 'react'
+
+import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined'
+import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
+import PollOutlinedIcon from '@mui/icons-material/PollOutlined'
+import LeaderboardOutlinedIcon from '@mui/icons-material/LeaderboardOutlined'
 
 const drawerWidth = 260
 
@@ -31,13 +32,13 @@ export default function ResponsiveDrawer (): ReactElement {
   const pickIcon = (text: string): ReactElement => {
     switch (text) {
       case 'Dashboard':
-        return (<DashboardIcon/>)
-      case 'Profile':
-        return (<PersonIcon/>)
+        return (<DashboardOutlinedIcon/>)
       case 'Maps':
-        return (<LocationOnIcon/>)
+        return (<MapOutlinedIcon/>)
       case 'Analytics':
-        return (<PieChartIcon/>)
+        return (<PollOutlinedIcon/>)
+      case 'Leaderboard':
+        return (<LeaderboardOutlinedIcon/>)
       default:
         return (<ImageIcon/>)
     }
@@ -47,8 +48,8 @@ export default function ResponsiveDrawer (): ReactElement {
         <div className="drawerContent">
             <img className="imageIconMenu" src="https://www.energymutual.com/wp-content/uploads/2020/03/EM-1-cropped.svg" alt={'Energy Mutual Logo'}/>
             <List>
-                {['Dashboard', 'Profile', 'Maps', 'Analytics'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
+                {['Dashboard', 'Maps', 'Analytics', 'Leaderboard'].map((text, index) => (
+                    <ListItem key={text} disablePadding className="menuItem">
                         <ListItemButton>
                             <ListItemIcon
                                 className="listItemIcon"

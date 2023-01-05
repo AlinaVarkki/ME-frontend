@@ -8,6 +8,15 @@
   flex-direction: column;
 }
 
+.menuItem {
+  &:hover > *  > * > * {
+      color: $green;
+  }
+  &:hover {
+    border-left: 2px solid $green;
+  }
+}
+
 .imageIconMenu {
   align-self: center;
   filter: brightness(0) invert(1);
@@ -24,4 +33,5 @@
   & > * {
     color: $off-white;
   }
+  padding-left: 15px;
 }
