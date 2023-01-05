@@ -3,12 +3,25 @@
 
 .drawerContent {
   display: flex;
+  background: $darkBlue;
+  height: 100%;
   flex-direction: column;
 }
 
-.imageIcon {
-  filter: brightness(0) invert(1);
-  height: 10vh;
-  width: 20vh;
+.imageIconMenu {
   align-self: center;
+  filter: brightness(0) invert(1);
+  margin-top: 5vh;
+  margin-bottom: 14vh;
+  width: 170px;
+}
+
+.menuItemText{
+  color: $off-white;
+}
+
+.listItemIcon {
+  & > * {
+    color: $off-white;
+  }
 }

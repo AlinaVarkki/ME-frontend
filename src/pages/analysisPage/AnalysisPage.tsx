@@ -19,7 +19,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import { ReactElement } from 'react'
 
-const drawerWidth = 240
+const drawerWidth = 260
 
 export default function ResponsiveDrawer (): ReactElement {
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -45,20 +45,19 @@ export default function ResponsiveDrawer (): ReactElement {
 
   const drawer = (
         <div className="drawerContent">
-            <img className="imageIcon" src="https://www.energymutual.com/wp-content/uploads/2020/03/EM-1-cropped.svg" alt={'Energy Mutual Logo'}/>
+            <img className="imageIconMenu" src="https://www.energymutual.com/wp-content/uploads/2020/03/EM-1-cropped.svg" alt={'Energy Mutual Logo'}/>
             <List>
                 {['Dashboard', 'Profile', 'Maps', 'Analytics'].map((text, index) => (
                     <ListItem key={text} disablePadding>
                         <ListItemButton>
                             <ListItemIcon
-                                sx={{
-                                  color: 'white'
-                                }}>
+                                className="listItemIcon"
+                                >
                                 {
                                     pickIcon(text)
                                 }
                             </ListItemIcon>
-                            <ListItemText primary={text} />
+                            <ListItemText className="menuItemText" primary={text} />
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -95,12 +94,6 @@ export default function ResponsiveDrawer (): ReactElement {
             >
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                 <Drawer
-                    PaperProps={{
-                      sx: {
-                        backgroundColor: '#2B3142',
-                        color: 'white'
-                      }
-                    }}
                     variant="temporary"
                     open={mobileOpen}
                     onClose={handleDrawerToggle}
@@ -115,12 +108,6 @@ export default function ResponsiveDrawer (): ReactElement {
                     {drawer}
                 </Drawer>
                 <Drawer
-                    PaperProps={{
-                      sx: {
-                        backgroundColor: '#2B3142',
-                        color: 'white'
-                      }
-                    }}
                     variant="permanent"
                     sx={{
                       display: { xs: 'none', sm: 'block' },
