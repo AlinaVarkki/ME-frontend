@@ -19,6 +19,7 @@ import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined'
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
 import PollOutlinedIcon from '@mui/icons-material/PollOutlined'
 import LeaderboardOutlinedIcon from '@mui/icons-material/LeaderboardOutlined'
+import { Link } from '@mui/material'
 
 const drawerWidth = 260
 
@@ -49,18 +50,20 @@ export default function ResponsiveDrawer (): ReactElement {
             <img className="imageIconMenu" src="https://www.energymutual.com/wp-content/uploads/2020/03/EM-1-cropped.svg" alt={'Energy Mutual Logo'}/>
             <List>
                 {['Dashboard', 'Maps', 'Analytics', 'Leaderboard'].map((text, index) => (
-                    <ListItem key={text} disablePadding className="menuItem">
-                        <ListItemButton>
-                            <ListItemIcon
-                                className="listItemIcon"
-                                >
-                                {
-                                    pickIcon(text)
-                                }
-                            </ListItemIcon>
-                            <ListItemText className="menuItemText" primary={text} />
-                        </ListItemButton>
-                    </ListItem>
+                    <Link key={text} href={text}>
+                        <ListItem key={text} disablePadding className="menuItem">
+                            <ListItemButton>
+                                <ListItemIcon
+                                    className="listItemIcon"
+                                    >
+                                    {
+                                        pickIcon(text)
+                                    }
+                                </ListItemIcon>
+                                <ListItemText className="menuItemText" primary={text} />
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
                 ))}
             </List>
         </div>

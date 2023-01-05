@@ -7,10 +7,11 @@ import AnalysisPage from './pages/analysisPage/AnalysisPage'
 function App (): ReactElement {
   return (
       <Router>
+          {window.location.pathname !== '/' ? <AnalysisPage/> : null}
         <div className="App">
             <Routes>
                 <Route path="/" element={<SearchPage/>}/>
-                <Route path="/results" element={<AnalysisPage/>}/>
+                <Route path="/results" element={<AnalysisPage/>}></Route>
             </Routes>
         </div>
       </Router>
