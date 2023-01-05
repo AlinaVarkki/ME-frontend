@@ -1,0 +1,14 @@
+@import "src/resources/colours.module";
+@import "src/resources/screen_sizes.module";
+
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageIcon {
+  filter: brightness(0) invert(1);
+  height: 10vh;
+  width: 20vh;
+  align-self: center;
+}
