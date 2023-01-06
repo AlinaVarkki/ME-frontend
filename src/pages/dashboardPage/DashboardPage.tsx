@@ -2,12 +2,12 @@ import './_DashboardPage.scss'
 
 import React, { ReactElement } from 'react'
 import DrawerPageBox from '../../shared/drawerPageBox/DrawerPageBox'
-import UnderConstruction from '../../shared/underConstruction/UnderConstruction'
+import GeneralOverview from './generalOverviewSection/generalOverview/GeneralOverview'
 
 function DashboardPage (): ReactElement {
   return (
       <DrawerPageBox>
-        <UnderConstruction pageName={'Dashboard'}/>
+          <GeneralOverview/>
       </DrawerPageBox>
   )
 }
