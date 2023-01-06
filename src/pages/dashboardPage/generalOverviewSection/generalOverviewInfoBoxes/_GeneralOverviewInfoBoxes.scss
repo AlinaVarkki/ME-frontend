@@ -1,0 +1,10 @@
+@import "src/resources/screen_sizes.module";
+
+.infoBoxesContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $small) {
+    justify-content: center;
+  }
+}

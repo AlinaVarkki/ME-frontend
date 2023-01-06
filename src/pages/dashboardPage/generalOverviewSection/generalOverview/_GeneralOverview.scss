@@ -1,0 +1,12 @@
+@import "src/resources/screen_sizes.module";
+
+.overviewSectionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText {
+  @media only screen and (max-width: $small) {
+  align-self: center;
+  }
+}
