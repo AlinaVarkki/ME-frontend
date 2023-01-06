@@ -1,12 +1,11 @@
 import React, { ReactElement } from 'react'
 import DrawerPageBox from '../../shared/drawerPageBox/DrawerPageBox'
+import UnderConstruction from '../../shared/underConstruction/UnderConstruction'
 
 function MapsPage (): ReactElement {
   return (
       <DrawerPageBox>
-          <div>
-            Maps
-          </div>
+        <UnderConstruction pageName={'Maps'}/>
       </DrawerPageBox>
   )
 }

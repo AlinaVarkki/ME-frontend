@@ -1,12 +1,11 @@
 import React, { ReactElement } from 'react'
 import DrawerPageBox from '../../shared/drawerPageBox/DrawerPageBox'
+import UnderConstruction from '../../shared/underConstruction/UnderConstruction'
 
 function LeaderboardPage (): ReactElement {
   return (
       <DrawerPageBox>
-          <div>
-            Leaderboard
-          </div>
+          <UnderConstruction pageName={'Leaderboard'}/>
       </DrawerPageBox>
   )
 }

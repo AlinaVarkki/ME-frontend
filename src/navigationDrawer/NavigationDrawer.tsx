@@ -115,10 +115,6 @@ export default function ResponsiveDrawer (): ReactElement {
             >
                 {drawer}
             </Drawer>
-            <Typography>
-
-            halloooo
-            </Typography>
         </>
   )
 }

@@ -1,0 +1,21 @@
+@import "src/resources/colours.module";
+
+.containerUnderConstruction {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.pageName {
+  color: $green;
+  padding-bottom: 20px;
+}
+
+.underConstructionIcon {
+  color: $darkBlue;
+  font-size: large;
+  transform: scale(2.5);
+  margin-top: 50px;
+}
