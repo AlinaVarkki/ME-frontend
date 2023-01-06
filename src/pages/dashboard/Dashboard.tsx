@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react'
-import { Box } from '@mui/material'
 import './_Dashboard.scss'
+import DrawerPage from '../../shared/DrawerPage'
 
 function Dashboard (): ReactElement {
   return (
-      <Box component="main" className="cBox" sx={{ flexGrow: 1, p: 7 }}>
+      <DrawerPage>
       <div>
         hey
         hey
@@ -31,94 +31,10 @@ function Dashboard (): ReactElement {
         hey
         hey
         hey
-        hey
-        hey
-        hey
-        hey
+          <div> lol</div>
       </div>
-      <div>
-          hey
-      </div>
-          <div>
-          hey
-      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>
-          hey
-      </div><div>
-          hey
-      </div>
-      </Box>
+              <div>dd</div>
+      </DrawerPage>
   )
 }
 

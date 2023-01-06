@@ -1,7 +1,6 @@
 import * as React from 'react'
 import './_NavigationDrawer.scss'
 import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
 import IconButton from '@mui/material/IconButton'
 import ImageIcon from '@mui/icons-material/Image'
