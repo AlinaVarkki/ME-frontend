@@ -51,7 +51,7 @@ function SearchPage (): ReactElement {
                             />}
                     />
                     {/* will move the Button css into the .scss later */}
-                    <Button href="/results" variant="contained" sx={{ margin: 3, backgroundColor: '#2B3142', borderRadius: 20, fontWeight: 'bold', width: '120px' }}>Search</Button>
+                    <Button href="/Dashboard" variant="contained" sx={{ margin: 3, backgroundColor: '#2B3142', borderRadius: 20, fontWeight: 'bold', width: '120px' }}>Search</Button>
                 </Grid>
             </Grid>
         </div>

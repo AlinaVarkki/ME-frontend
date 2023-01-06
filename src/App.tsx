@@ -2,19 +2,20 @@ import React, { ReactElement } from 'react'
 import './App.scss'
 import SearchPage from './pages/searchPage/SearchPage'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import AnalysisPage from './pages/analysisPage/AnalysisPage'
+import NavigationDrawer from './pages/navigationDrawer/NavigationDrawer'
+import Dashboard from './pages/dashboard/Dashboard'
 
 function App (): ReactElement {
   return (
-      <Router>
-          {window.location.pathname !== '/' ? <AnalysisPage/> : null}
         <div className="App">
-            <Routes>
-                <Route path="/" element={<SearchPage/>}/>
-                <Route path="/results" element={<AnalysisPage/>}></Route>
-            </Routes>
+          <Router>
+              {window.location.pathname !== '/' ? <NavigationDrawer/> : null}
+                <Routes>
+                    <Route path="/" element={<SearchPage/>}/>
+                    <Route path="/Dashboard" element={<Dashboard/>}></Route>
+                </Routes>
+          </Router>
         </div>
-      </Router>
   )
 }
 

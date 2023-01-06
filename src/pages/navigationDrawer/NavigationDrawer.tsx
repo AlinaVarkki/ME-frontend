@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './_AnalysisPage.scss'
+import './_NavigationDrawer.scss'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
