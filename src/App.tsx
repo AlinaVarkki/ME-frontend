@@ -10,18 +10,16 @@ import LeaderboardPage from './pages/leaderboardPage/LeaderboardPage'
 
 function App (): ReactElement {
   return (
-        <div className="App">
-          <Router>
-              {window.location.pathname !== '/' ? <NavigationDrawer/> : null}
-                <Routes>
-                    <Route path="/" element={<SearchPage/>}/>
-                    <Route path="/Dashboard" element={<DashboardPage/>}/>
-                    <Route path="/Maps" element={<MapsPage/>}/>
-                    <Route path="/Analytics" element={<AnalyticsPage/>}/>
-                    <Route path="/Leaderboard" element={<LeaderboardPage/>}/>
-                </Routes>
-          </Router>
-        </div>
+      <Router>
+          {window.location.pathname !== '/' ? <NavigationDrawer/> : null}
+            <Routes>
+                <Route path="/" element={<SearchPage/>}/>
+                <Route path="/Dashboard" element={<DashboardPage/>}/>
+                <Route path="/Maps" element={<MapsPage/>}/>
+                <Route path="/Analytics" element={<AnalyticsPage/>}/>
+                <Route path="/Leaderboard" element={<LeaderboardPage/>}/>
+            </Routes>
+      </Router>
   )
 }
 

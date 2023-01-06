@@ -1,13 +1,14 @@
+import './_SearchPage.scss'
+
 import React, { ReactElement } from 'react'
 import { Grid, TextField, Typography, Autocomplete, InputAdornment, Button } from '@mui/material'
-import './_SearchPage.scss'
 import { postcodes } from '../../resources/postcodeExamples'
 import SearchIcon from '@mui/icons-material/Search'
 
 function SearchPage (): ReactElement {
   return (
         <div className="SearchPage">
-            <img className="backgroundImage" src="https://i.ibb.co/17wQ2Vb/appolinary-kalashnikova-WYGh-TLym344-unsplash.jpg"/>
+            <img className="backgroundImage" src="https://i.ibb.co/17wQ2Vb/appolinary-kalashnikova-WYGh-TLym344-unsplash.jpg" alt={'Background image'}/>
             <Grid
                 container
                 direction="column"
