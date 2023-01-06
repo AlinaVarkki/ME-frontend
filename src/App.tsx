@@ -12,7 +12,7 @@ function App (): ReactElement {
               {window.location.pathname !== '/' ? <NavigationDrawer/> : null}
                 <Routes>
                     <Route path="/" element={<SearchPage/>}/>
-                    <Route path="/Dashboard" element={<Dashboard/>}></Route>
+                    <Route path="/Dashboard" element={<Dashboard/>}/>
                 </Routes>
           </Router>
         </div>

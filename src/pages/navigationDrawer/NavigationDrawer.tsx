@@ -70,9 +70,8 @@ export default function ResponsiveDrawer (): ReactElement {
   )
 
   return (
-        <Box sx={{ display: 'flex' }}>
+        <>
             <AppBar
-                position="fixed"
                 sx={{
                   width: { sm: `calc(100% - ${drawerWidth}px)` },
                   ml: { sm: `${drawerWidth}px` }
@@ -91,57 +90,36 @@ export default function ResponsiveDrawer (): ReactElement {
                     </IconButton>
                 </Toolbar>
             </AppBar>
-            <Box
-                component="nav"
-                sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-                aria-label="mailbox folders"
-            >
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                <Drawer
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                      keepMounted: true // Better open performance on mobile.
-                    }}
-                    sx={{
-                      display: { xs: 'block', sm: 'none' },
-                      '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth }
-                    }}
-                >
-                    {drawer}
-                </Drawer>
-                <Drawer
-                    variant="permanent"
-                    sx={{
-                      display: { xs: 'none', sm: 'block' },
-                      '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth }
-                    }}
-                    open
-                >
-                    {drawer}
-                </Drawer>
-            </Box>
-            <Box
-                component="main"
-                sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+            <Drawer
+                variant="temporary"
+                open={mobileOpen}
+                onClose={handleDrawerToggle}
+                ModalProps={{
+                  keepMounted: true // Better open performance on mobile.
+                }}
+                sx={{
+                  display: { sm: 'none' },
+                  '& .MuiDrawer-paper': { width: drawerWidth }
+                }}
             >
-                <Toolbar />
-                <Typography paragraph>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
-                    enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
-                    imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
-                    Convallis convallis tellus id interdum velit laoreet id donec ultrices.
-                    Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-                    adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
-                    nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
-                    leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
-                    feugiat vivamus at augue. At augue eget arcu dictum varius duis at
-                    consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
-                    sapien faucibus et molestie ac.
-                </Typography>
-            </Box>
-        </Box>
+                {drawer}
+            </Drawer>
+            <Drawer
+                variant="permanent"
+                sx={{
+                  display: { xs: 'none', sm: 'block' },
+                  flexShrink: 0,
+                  '& .MuiDrawer-paper': { width: drawerWidth, boxSizing: 'border-box' }
+                }}
+                open
+            >
+                {drawer}
+            </Drawer>
+            <Typography>
+
+            halloooo
+            </Typography>
+        </>
   )
 }

@@ -1,8 +1,10 @@
 import React, { ReactElement } from 'react'
+import { Box } from '@mui/material'
+import './_Dashboard.scss'
 
 function Dashboard (): ReactElement {
   return (
-      <>
+      <Box component="main" className="cBox" sx={{ flexGrow: 1, p: 7 }}>
       <div>
         hey
         hey
@@ -116,7 +118,7 @@ function Dashboard (): ReactElement {
       </div><div>
           hey
       </div>
-      </>
+      </Box>
   )
 }
 
