@@ -4,18 +4,18 @@ import React, { ReactElement } from 'react'
 import { Box, Typography } from '@mui/material'
 
 interface GeneralOverviewInfoBoxI {
-  topLine: string
-  bottomLine: string
+  valueDescription: string
+  value: string
 }
 
-function GeneralOverviewInfoBox ({ topLine, bottomLine }: GeneralOverviewInfoBoxI): ReactElement {
+function GeneralOverviewInfoBox ({ valueDescription, value }: GeneralOverviewInfoBoxI): ReactElement {
   return (
       <Box className="infoBoxContainer">
           <Typography fontSize={16}>
-              {topLine}
+              {valueDescription}
           </Typography>
           <Typography className="secondLine" fontWeight={'bold'} fontSize={18}>
-              {bottomLine}
+              {value}
           </Typography>
       </Box>
   )
