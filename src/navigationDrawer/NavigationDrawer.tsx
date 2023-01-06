@@ -1,6 +1,5 @@
 import * as React from 'react'
 import './_NavigationDrawer.scss'
-import AppBar from '@mui/material/AppBar'
 import Drawer from '@mui/material/Drawer'
 import IconButton from '@mui/material/IconButton'
 import ImageIcon from '@mui/icons-material/Image'
@@ -11,7 +10,6 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
 import { ReactElement } from 'react'
 
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined'
@@ -20,7 +18,8 @@ import PollOutlinedIcon from '@mui/icons-material/PollOutlined'
 import LeaderboardOutlinedIcon from '@mui/icons-material/LeaderboardOutlined'
 import { Link } from '@mui/material'
 
-const drawerWidth = 260
+import { DRAWER_WIDTH } from '../resources/constants'
+
 
 export default function ResponsiveDrawer (): ReactElement {
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -89,7 +88,7 @@ export default function ResponsiveDrawer (): ReactElement {
                 }}
                 sx={{
                   display: { sm: 'none' },
-                  '& .MuiDrawer-paper': { width: drawerWidth }
+                  '& .MuiDrawer-paper': { width: DRAWER_WIDTH }
                 }}
             >
                 {drawer}
@@ -99,7 +98,7 @@ export default function ResponsiveDrawer (): ReactElement {
                 sx={{
                   display: { xs: 'none', sm: 'block' },
                   flexShrink: 0,
-                  '& .MuiDrawer-paper': { width: drawerWidth, boxSizing: 'border-box' }
+                  '& .MuiDrawer-paper': { width: DRAWER_WIDTH, boxSizing: 'border-box' }
                 }}
                 open
             >
