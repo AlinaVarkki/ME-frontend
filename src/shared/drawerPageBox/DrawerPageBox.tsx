@@ -1,8 +1,8 @@
 import React, { ReactElement, ReactNode } from 'react'
 import { Box } from '@mui/material'
-import './_DrawerPage.scss'
+import './_DrawerPageBox.scss'
 
-function DrawerPage (props: { children: ReactNode }): ReactElement {
+function DrawerPageBox (props: { children: ReactNode }): ReactElement {
   return (
       <Box component="main" className="drawerContentBox" sx={{ flexGrow: 1, p: 7 }}>
           {props.children}
@@ -10,4 +10,4 @@ function DrawerPage (props: { children: ReactNode }): ReactElement {
   )
 }
 
-export default DrawerPage
+export default DrawerPageBox
