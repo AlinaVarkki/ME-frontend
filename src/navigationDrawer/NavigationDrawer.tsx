@@ -70,25 +70,15 @@ export default function ResponsiveDrawer (): ReactElement {
 
   return (
         <>
-            <AppBar
-                sx={{
-                  width: { sm: `calc(100% - ${drawerWidth}px)` },
-                  ml: { sm: `${drawerWidth}px` }
-                }}
-            >
-                <Toolbar sx={{ justifyContent: 'space-between' }}>
-                    <Typography variant="h6" noWrap component="div">
-                        Search bar
-                    </Typography>
+                <Toolbar sx={{ justifyContent: 'flex-end' }}>
                     <IconButton
-                        color="inherit"
+                        color='inherit'
                         onClick={handleDrawerToggle}
                         sx={{ display: { sm: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>
                 </Toolbar>
-            </AppBar>
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
             <Drawer
                 variant="temporary"
