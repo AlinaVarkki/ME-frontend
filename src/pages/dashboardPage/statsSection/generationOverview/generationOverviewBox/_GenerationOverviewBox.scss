@@ -1,7 +1,21 @@
 @import "src/resources/colours.module";
 
 .genOverviewBoxContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 200px;
-  background-color: $darkBlue;
+  background-color: $blue;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
 
+.valueIcon {
+  color: $off-white;
+  padding-bottom: 20px;
+}
+
+.valueDescription {
+  color: $off-white;
 }

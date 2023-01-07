@@ -1,0 +1,7 @@
+@import "src/resources/screen_sizes.module";
+
+.GenerationOverviewContainer {
+  @media only screen and (min-width: $medium) {
+    padding-left: 20px;
+  }
+}

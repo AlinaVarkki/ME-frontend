@@ -5,7 +5,9 @@ import GenerationOverviewBox from './generationOverviewBox/GenerationOverviewBox
 
 function GenerationOverview (): ReactElement {
   return (
-      <div>
+      <div className="GenerationOverviewContainer">
+          <GenerationOverviewBox/>
+          <GenerationOverviewBox/>
           <GenerationOverviewBox/>
       </div>
   )

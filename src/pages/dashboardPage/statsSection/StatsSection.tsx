@@ -10,24 +10,22 @@ function StatsSection (): ReactElement {
   return (
       <>
       <Box
+          sx={{ display: { xs: 'block', md: 'block', lg: 'none' } }}
+      >
+          <GenerationGraph/>
+          <GenerationOverview/>
+          <DownloadReport/>
+      </Box>
+      <Box
           sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}
       >
           <div className="graphAndOverviewSection">
-              <div className="graphWrapperNoFlex">
+              <div>
                 <GenerationGraph/>
-      <DownloadReport/>
+                <DownloadReport/>
               </div>
               <GenerationOverview/>
           </div>
-      </Box>
-      <Box
-          sx={{ display: { xs: 'block', md: 'block', lg: 'none' } }}
-      >
-          <div className="graphWrapperNoFlex">
-            <GenerationGraph/>
-          </div>
-          <GenerationOverview/>
-          <DownloadReport/>
       </Box>
       </>
   )
