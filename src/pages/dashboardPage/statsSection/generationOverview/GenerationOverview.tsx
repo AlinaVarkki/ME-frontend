@@ -9,7 +9,7 @@ function GenerationOverview (): ReactElement {
       <div className="GenerationOverviewContainer">
           {
               generationOverviewInfo.map((genOverviewItem, index) => (
-                  <GenerationOverviewBox key={index} value={genOverviewItem.value} valueDescription={genOverviewItem.valueDescription}/>
+                  <GenerationOverviewBox key={index} value={genOverviewItem.value} valueDescription={genOverviewItem.valueDescription} backgroundColour={index === generationOverviewInfo.length - 1 ? 'green' : 'blue'}/>
               ))
           }
       </div>

@@ -9,6 +9,10 @@
   padding: 20px;
   margin-top: 10px;
   border-radius: 20px;
+
+  &.green {
+    background-color: $darkGreen;
+  }
 }
 
 .valueIcon {
