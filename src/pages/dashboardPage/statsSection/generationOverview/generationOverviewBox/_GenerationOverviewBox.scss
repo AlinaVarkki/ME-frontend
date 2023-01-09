@@ -15,6 +15,12 @@
   &.green {
     background-color: $darkGreen;
   }
+
+  @media only screen and (max-width: $medium) {
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+  }
 }
 
 .valueIcon {
