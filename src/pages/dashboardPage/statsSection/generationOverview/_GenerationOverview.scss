@@ -1,7 +1,18 @@
 @import "src/resources/screen_sizes.module";
 
 .GenerationOverviewContainer {
+  display: flex;
+  flex-direction: column;
+
   @media only screen and (min-width: $medium) {
     padding-left: 20px;
+  }
+
+  @media only screen and (max-width: $medium) {
+    padding-top: 20px;
+  }
+
+  @media only screen and (max-width: $small) {
+    align-items: center;
   }
 }
