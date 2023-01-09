@@ -4,9 +4,9 @@ import React, { ReactElement } from 'react'
 import { Typography } from '@mui/material'
 
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined'
-import DataUsageOutlinedIcon from '@mui/icons-material/DataUsageOutlined';
+import DataUsageOutlinedIcon from '@mui/icons-material/DataUsageOutlined'
 import { GenerationBoxColorsEnum, GenerationBoxIconsEnum } from '../GenerationOverview'
-import PowerSettingsNewOutlinedIcon from '@mui/icons-material/PowerSettingsNewOutlined';
+import PowerSettingsNewOutlinedIcon from '@mui/icons-material/PowerSettingsNewOutlined'
 
 interface GenerationOverviewInfoBoxI {
   valueDescription: string

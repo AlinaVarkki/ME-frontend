@@ -4,7 +4,7 @@ import './_DrawerPageBox.scss'
 
 function DrawerPageBox (props: { children: ReactNode }): ReactElement {
   return (
-      <Box component="main" className="drawerContentBox" sx={{ flexGrow: 1, p: 5 }}>
+      <Box component="main" className="drawerContentBox" sx={{ flexGrow: 1, p: 4, paddingTop: 0 }}>
           {props.children}
       </Box>
   )

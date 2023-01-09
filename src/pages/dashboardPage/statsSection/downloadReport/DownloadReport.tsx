@@ -2,7 +2,7 @@ import './_DownloadReport.scss'
 
 import React, { ReactElement } from 'react'
 import { Button, Typography } from '@mui/material'
-import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined'
 
 function DownloadReport (): ReactElement {
   return (

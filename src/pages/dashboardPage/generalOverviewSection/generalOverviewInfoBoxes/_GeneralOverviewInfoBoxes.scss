@@ -3,6 +3,8 @@
 .infoBoxesContainer {
   display: flex;
   flex-wrap: wrap;
+  //below is a random padding. Come back and make a standard
+  padding-bottom: 50px;
 
   @media only screen and (max-width: $small) {
     justify-content: center;
