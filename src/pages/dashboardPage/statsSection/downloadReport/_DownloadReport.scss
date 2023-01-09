@@ -1,0 +1,27 @@
+@import "src/resources/colours.module";
+@import "src/resources/screen_sizes.module";
+
+.downloadReportContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $darkBlue;
+  border-radius: 18px;
+  margin-top: 30px;
+  padding: 20px;
+
+
+}
+
+.downloadReportElement {
+  @media only screen and (max-width: $medium) {
+    align-self: center;
+    text-align: center;
+  }
+  @media only screen and (min-width: $medium) {
+    width: 80%;
+  }
+}
+
+.downloadButton {
+  width: 230px;
+}
