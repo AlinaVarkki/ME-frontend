@@ -1,11 +1,11 @@
 @import "src/resources/screen_sizes.module";
 
-$drawerContentMargin: 35px;
+$drawerContentMargin: 40px;
 
 .drawerContentBox {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   margin: $drawerContentMargin;
 
   @media only screen and (min-width: $small) {

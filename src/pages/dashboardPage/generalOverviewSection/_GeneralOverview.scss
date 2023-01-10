@@ -3,10 +3,5 @@
 .overviewSectionContainer {
   display: flex;
   flex-direction: column;
-}
-
-.headerText {
-  @media only screen and (max-width: $small) {
-  align-self: center;
-  }
+  gap: 12px;
 }

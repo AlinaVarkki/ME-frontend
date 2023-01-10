@@ -11,10 +11,10 @@ interface GeneralOverviewInfoBoxI {
 function GeneralOverviewInfoBox ({ valueDescription, value }: GeneralOverviewInfoBoxI): ReactElement {
   return (
       <Box className="infoBoxContainer">
-          <Typography fontSize={16}>
+          <Typography className="firstLine">
               {valueDescription}
           </Typography>
-          <Typography className="secondLine" fontWeight={'bold'} fontSize={18}>
+          <Typography className="secondLine">
               {value}
           </Typography>
       </Box>

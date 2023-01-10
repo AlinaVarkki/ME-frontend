@@ -2,7 +2,7 @@ import './_DashboardPage.scss'
 
 import React, { ReactElement } from 'react'
 import DrawerPageBox from '../../shared/drawerPageBox/DrawerPageBox'
-import GeneralOverview from './generalOverviewSection/generalOverview/GeneralOverview'
+import GeneralOverview from './generalOverviewSection/GeneralOverview'
 import StatsSection from './statsSection/StatsSection'
 import CompareSitesButton from './compareSitesButton/CompareSitesButton'
 
