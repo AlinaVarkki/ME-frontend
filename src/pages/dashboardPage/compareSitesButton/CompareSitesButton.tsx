@@ -1,19 +1,12 @@
 import './_CompareSitesButton.scss'
 import React, { ReactElement } from 'react'
 import { Button } from '@mui/material'
-import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined'
+import CompareArrowsOutlinedIcon from '@mui/icons-material/CompareArrowsOutlined';
 
 function CompareSitesButton (): ReactElement {
   return (
       <div className="buttonContainer">
-           <Button variant="contained" sx={{
-             backgroundColor: '#1C7A5F',
-             borderRadius: 20,
-             fontWeight: 'bold',
-             fontSize: 13,
-             width: '180px'
-           }}
-           endIcon={<FileDownloadOutlinedIcon/>}>
+           <Button className="bt" endIcon={<CompareArrowsOutlinedIcon/>}>
               Compare Site
           </Button>
       </div>

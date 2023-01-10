@@ -1,12 +1,20 @@
 @import "src/resources/screen_sizes.module";
+@import "src/resources/colours.module";
 
 .buttonContainer {
-  margin-bottom: 30px;
-  @media only screen and (min-width: $medium) {
-    align-self: flex-end;
-    margin-bottom: 0px;
-  }
+  align-self: flex-end;
   @media only screen and (max-width: $small) {
     align-self: center;
   }
+}
+
+//!important overwrites mui styling
+.bt {
+  border-radius: 20px !important;
+  background-color: $mediumGreen !important;
+  color: $off-white !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
 }
