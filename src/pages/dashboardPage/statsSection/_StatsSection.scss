@@ -1,14 +1,6 @@
 @import "src/resources/screen_sizes.module";
 
-.statsContainer {
-  display: flex;
-  flex-direction: column;
-}
-
 .graphAndOverviewSection {
   display: flex;
-  flex-direction: row;
-  @media only screen and (max-width: $medium) {
-    flex-direction: column;
-  }
+  justify-content: space-between;
 }
