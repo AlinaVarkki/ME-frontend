@@ -1,14 +1,14 @@
 @import "src/resources/screen_sizes.module";
 
+$drawerContentMargin: 35px;
+
 .drawerContentBox {
   display: flex;
   flex-direction: column;
-
-  & > * {
-    //padding-bottom: 60px;
-  }
+  gap: 20px;
+  margin: $drawerContentMargin;
 
   @media only screen and (min-width: $small) {
-    margin-left: 260px;
+    margin-left: 260px + $drawerContentMargin;
   }
 }
